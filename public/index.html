@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanel Orallo — Computer Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">CVO<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Chanel Orallo</h1>
+      <p class="hero-title">Computer Engineer</p>
+      <p class="hero-desc">Highly Adaptable Computer Engineer</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-block">
+        <p>&nbsp;&nbsp;name: <span class="code-string">Chanel Vincent E. Orallo</span>,</p>
+        <p>&nbsp;&nbsp;role: <span class="code-string">Computer Engineer</span>,</p>
+        <p>&nbsp;&nbsp;stack: <span class="code-string">HTML, CSS, JS, Node</span>,</p>
+        <p>&nbsp;&nbsp;status: <span class="code-string">Available for hire</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>A Motivated Computer Engineering Graduate of 4 years with a solid foundation in programming, system design, problem-solving and project management. Ready to apply the technical skills learned in the real-world work environment. A fast learner and capable of adapting to any environment. Able to take the role of leading a project or cooperation with groups.</p>
+          <p>Currently focused on mastering the full stack, from frontends, backend and APIs.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Project Deployed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Things to Learn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">Tech <span>Stack</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored skill-icon"></i>
+          <span class="skill-name">HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored skill-icon"></i>
+          <span class="skill-name">CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored skill-icon"></i>
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-nodejs-plain colored skill-icon"></i>
+          <span class="skill-name">Node.js</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-express-original skill-icon"></i>
+          <span class="skill-name">Express</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored skill-icon"></i>
+          <span class="skill-name">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <div class="project-card" data-project="skycast">
+          <div class="project-header">
+            <span class="project-icon">⛅</span>
+            <div class="project-links">
+              <a href="https://sky-cast-jade.vercel.app" target="_blank">Live ↗</a>
+              <a href="https://github.com/06Stix/SkyCast" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <h3 class="project-title">Skycast</h3>
+          <p class="project-desc">Weather app with live data, dynamic themes and CSS weather animations</p>
+          <div class="project-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Node.js</span>
+            <span>Express</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title"></h3>
+        <button class="modal-close" id="modal-close">✕</button>
+      </div>
+      <div class="modal-images" id="modal-images"></div>
+      <div class="modal-dots" id="modal-dots"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <p class="contact-desc">I'm currently open to new opportunities. Whether you have a project in mind or just want to connect — my inbox is open.</p>
+      <a href="mailto:your@email.com" class="btn-primary">Connect Now ↗</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Built by Chanel Orallo · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
