@@ -110,3 +110,33 @@ document.addEventListener('keydown', function(event) {
     closeModal()
   }
 })
+
+
+const contactToggle = document.getElementById('contact-toggle')
+const contactCard   = document.getElementById('contact-card')
+
+contactToggle.addEventListener('click', function() {
+  contactCard.classList.toggle('open')
+})
+
+document.querySelectorAll('.contact-item').forEach(function(item) {
+  item.addEventListener('click', function() {
+    const text = item.dataset.copy
+    navigator.clipboard.writeText(text)
+    
+    item.classList.add('copied')
+    item.querySelector('.contact-copy').textContent = 'Copied!'
+
+    setTimeout(function() {
+      item.classList.remove('copied')
+      item.querySelector('.contact-copy').textContent = 'Click to copy'
+    }, 2000)
+  })
+})
+
+// close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  if (!contactToggle.contains(event.target) && !contactCard.contains(event.target)) {
+    contactCard.classList.remove('open')
+  }
+})
